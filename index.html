@@ -4,10 +4,18 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="lib/css/fonts.css"/>
+        <!--Debug-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.1/umd/react.development.min.js" integrity="sha512-+Ohak0lvoXLuKqf1LPS5ekQ35AxPLa048x/Gkr61VG/7zha33p5FnXC7YE975kTY4ex2MgDLT68zdTAAOyc8LQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.1/umd/react-dom.development.min.js" integrity="sha512-eekQSdT2MPXRlRouHGt//FWlbhTB8YW3xPm67s/xijYBKRpOY4M+t5Gni1ITP5PenCIsC4lb45iRBjRFD4HyUA==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/material-ui/4.11.3/umd/material-ui.development.min.js" integrity="sha512-JkVugruAt2L073RH3jCQYFi/nAUwB66S5/k+MhdTdq/tpPbM6nqXaclPzipfRzLS5vwSIbPqH8TuaQUDpkbCYw==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js" integrity="sha512-pBSlhNUvB+td6sjW1zmR6L7c7kVWR4octUPl4tfHmzO63424nxta8aLmficEcAAswQmRqTiToi63AazDurj/Sg==" crossorigin="anonymous"></script>
+        <!--Release-->
+        <!--
         <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.1/umd/react.production.min.js" integrity="sha512-YMtLFKDKe5a4zi7rJ0y4wdGErKZe3tx7L+AXDTxjNDzkv7jsaNhvumeU1xQvw6UqVwBVmYlO9NhsSuSVPUN/xQ==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.1/umd/react-dom.production.min.js" integrity="sha512-vN6rbu+vWW4Ck3s6RbLZs+0gRl5PWOZRUqap38gZtsheSqA2zDeI3PCshuxfYx7ytkoFMrmd0gA2sZZeP1RZYQ==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/material-ui/4.11.3/umd/material-ui.production.min.js" integrity="sha512-cGrWojZoILpIN+TxYDWhW5/7znv1OMxZFutQwUKz5JKSIAMOmDUhBUNyweXSuglXJxiYYNjh9oLwEWah6ERWhA==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js" integrity="sha512-kp7YHLxuJDJcOzStgd6vtpxr4ZU9kjn77e6dBsivSz+pUuAuMlE2UTdKB7jjsWT84qbS8kdCWHPETnP/ctrFsA==" crossorigin="anonymous"></script>
+        -->
     </head>
     <body>
         <div class="react-container-root">
@@ -24,7 +32,7 @@
                 AppBar,
                 Toolbar,
                 IconButton,
-                MenuIcon,
+                Icon,
                 createMuiTheme,
                 Box,
                 SvgIcon,
@@ -56,10 +64,9 @@
                     <AppBar position="fixed">
                         <Toolbar>
                             <Typography variant="h6">rk0cc</Typography>
-                            {/*<IconButton edge="end" aria-label="menu">
-                                 <MenuIcon/>
-                             </IconButton>
-                            */}
+                            <IconButton edge="end" aria-label="menu">
+                                <Icon>menu</Icon>
+                            </IconButton>
                         </Toolbar>
                     </AppBar>
                 );
