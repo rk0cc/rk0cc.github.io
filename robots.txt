@@ -1,5 +1,10 @@
-User-agent:
-Allow: /
+User-agent: *
+Allow: /*.html
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+Allow: favicon.ico
+
 
 User-agent: Turnitin
 Disallow: /
