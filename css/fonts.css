@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.condensed {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+}
+
+pre, code {
+    font-family: 'Ubuntu Mono', monospace;
+}
