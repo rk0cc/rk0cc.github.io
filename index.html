@@ -10,16 +10,68 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/standard_style.css" />
     <link rel="icon" href="favicon.ico">
+    <style>
+        body>div.welcome-banner:first-child {
+            height: 50vh;
+            background-color: var(--m-on-primary-container);
+        }
+
+        body>div.welcome-banner:first-child h1.welcome-banner-brand {
+            font-size: 5rem;
+            color: var(--m-primary-fixed);
+        }
+
+        nav.navbar {
+            min-height: 75px;
+        }
+
+        nav.navbar a.navbar-brand:first-child {
+            display: none;
+        }
+
+        nav.navbar.is-sticked a.navbar-brand:first-child {
+            display: inline;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Foo</h1>
-    <p>Old page demolished, pending for constructing new page.</p>
-    <br />
-    <p><img src="assets/logo.svg" width="50" /> rk0cc</p>
+    <div class="d-flex flex-column align-items-center justify-content-center welcome-banner">
+        <div class="d-flex flex-row align-items-center justify-content-center">
+            <img src="assets/logo.svg" width="200" />
+            <h1 class="welcome-banner-brand">rk0cc</h1>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="assets/logo.svg" width="50" class="d-inline-block align-text-top" />
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
         integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        (function () {
+            const stickedClassName = "is-sticked";
+            const welcomeBanner = document.querySelector("body > div.welcome-banner");
+
+            window.addEventListener("scroll", function (e) {
+                const navbar = document.querySelector("nav.navbar");
+                console.log(window.scrollY);
+
+                if (window.scrollY > welcomeBanner.offsetHeight) {
+                    navbar.classList.add(stickedClassName);
+                } else {
+                    navbar.classList.remove(stickedClassName);
+                }
+            });
+        })();
+    </script>
 </body>
 
 </html>

@@ -1,3 +1,6 @@
 @import "colours.css";
 @import "fonts.css";
 
+nav.navbar {
+    background-color: var(--m-surface);
+}
