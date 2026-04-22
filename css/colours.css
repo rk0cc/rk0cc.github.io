@@ -48,4 +48,34 @@
     --m-surface-container: rgb(229 242 221);
     --m-surface-container-high: rgb(224 236 215);
     --m-surface-container-highest: rgb(218 230 209);
+    --bs-primary: var(--m-primary-container);
+    --bs-secondary: var(--m-secondary-container);
+}
+
+.btn {
+    --bs-btn-disabled-color: grey;
+    --bs-btn-disabled-bg: var(--m-surface-container-highest);
+    --bs-btn-disabled-border-color: var(--m-surface-container-highest);
+}
+
+.btn-primary {
+    --bs-btn-color: black;
+    --bs-btn-bg: var(--m-primary-container);
+    --bs-btn-border-color: var(--m-primary-container);
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: var(--m-primary-fixed-dim);
+    --bs-btn-hover-border-color: var(--m-primary-fixed-dim);
+    --bs-btn-active-bg: var(--m-on-primary-container);
+    --bs-btn-active-border-color: var(--m-on-primary-container);
+}
+
+.btn-secondary {
+    --bs-btn-color: black;
+    --bs-btn-bg: var(--m-secondary-container);
+    --bs-btn-border-color: var(--m-secondary-container);
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: var(--m-secondary-fixed-dim);
+    --bs-btn-hover-border-color: var(--m-secondary-fixed-dim);
+    --bs-btn-active-bg: var(--m-on-secondary-fixed);
+    --bs-btn-active-border-color: var(--m-on-secondary-fixed);
 }

@@ -18,6 +18,7 @@
             from {
                 transform: rotateY(90deg);
             }
+
             to {
                 transform: rotateY(0);
             }
@@ -38,7 +39,7 @@
             animation: logo-rotate-expand 625ms ease-out;
         }
 
-        @media only screen and (min-width: 992px) {
+        @media screen and (min-width: 992px) {
             nav.navbar {
                 min-height: 75px;
             }
@@ -78,16 +79,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link fs-5" href="#">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
+                        <a class="nav-link fs-5" href="#">Resources</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link fs-5" href="#">About</a>
                     </li>
                 </ul>
             </div>
@@ -98,17 +99,88 @@
         <div class="d-flex flex-column flex-lg-row align-items-center justify-content-around text-center my-2">
             <div class="container m-4">
                 <i class="fa-solid fa-code fa-8x"></i>
-                <h1 class="display-3">Software</h1>
+                <h2 class="display-3">Software</h2>
             </div>
             <div class="container m-4">
                 <i class="fa-solid fa-microchip fa-8x"></i>
-                <h1 class="display-3">Electrical</h1>
+                <h2 class="display-3">Electrical</h2>
             </div>
         </div>
-        <hr/>
-        <div class="my-2">
-            
+        <hr />
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-evenly my-2">
+            <div class="m-4 flex-lg-grow-1">
+                <h2 class="display-6">Mature experience on software development</h2>
+                <p>During higher education, rk0cc has experienced common practise of programming in both functional
+                    and object-oriented approaches across various popular programming languages. From Java as the
+                    first programming languages, to C&sol;C&plus;&plus; for reaching more barebone control of system
+                    memory. Since the principle of programming syntax in Java aligns with C&sol;C&plus;&plus;, which
+                    similar with most common programming languages that rk0cc can write a program in at least four
+                    popular programing languages, which currently or previously stated in top-10.
+                </p>
+                <p>Since July 2021, rk0cc has started publishing Java and Dart packages in <a
+                        href="https://mvnrepository.com/artifact/xyz.rk0cc">Maven central</a>
+                    and <a href="https://pub.dev/publishers/rk0cc.xyz/packages">Dart pub</a> accordingly as a counter
+                    prove of severe worse performance in it first final year project.
+                    Although the update progress becomes slower or even halted because of resuming higher education
+                    progress at September 2022, it puts more efforts on interactions between system and Flutter desktop,
+                    which only had limited options availabled in 2023. As a result, two packages were published with
+                    little impressive reputation.
+                </p>
+                <div class="text-center container-fluid my-4">
+                    <a href="#" class="btn btn-primary">Visit the featured repositorities</a>
+                </div>
+            </div>
+            <div class="m-4 p-2 flex-lg-shrink-0">
+                <h3 class="fs-3 text-left my-4">Programming languages</h3>
+                <div class="d-flex flex-row align-items-center justify-content-evenly text-center">
+                    <img class="d-block m-2"
+                        src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" width="75"
+                        alt="C language" />
+                    <img class="d-block m-2"
+                        src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width="75"
+                        alt="C plus plus language" />
+                    <img class="d-block m-2" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Logo_C_sharp.svg"
+                        width="75" alt="C sharp language" />
+                </div>
+                <div class="d-flex flex-row align-items-center justify-content-evenly text-center">
+                    <img class="d-block m-2" src="https://upload.wikimedia.org/wikipedia/commons/1/18/OpenJDK_logo.svg"
+                        width="150" alt="Java (using OpenJDK logo to represents)" />
+                    <img class="d-block m-2" src="assets/thirdparty/icon_dart.svg" width="75" alt="Dart" />
+                    <img class="d-block m-2"
+                        src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg"
+                        width="75" alt="Python" />
+                </div>
+                <div class="d-flex flex-row align-items-center justify-content-evenly text-center">
+                    <img class="d-block m-2" src="https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg" width="150"
+                        alt="Go" />
+                </div>
+                <h3 class="fs-3 text-left my-4">Frameworks</h3>
+                <div class="d-flex flex-row align-items-center justify-content-evenly text-center">
+                    <img class="d-block m-2"
+                        src="https://flutter.dev/assets/lockup_flutter_horizontal.549a1b7dd82615e8e9c95c1ade8cee42.svg"
+                        width="250" alt="Flutter" />
+                    <img class="d-block m-2"
+                        src="https://raw.githubusercontent.com/dotnet/brand/refs/heads/main/logo/dotnet-logo.svg"
+                        width="125" alt="Dot net" />
+                </div>
+                <h3 class="fs-3 text-left my-4">Build tools</h3>
+                <div class="d-flex flex-row align-items-center justify-content-evenly text-center">
+                    <p class="display-4 m-2">GNU Make</p>
+                    <img class="d-block m-2" src="https://www.apache.org/logos/originals/maven.svg" width="225"
+                        alt="Apache Maven" />
+                </div>
+                <div class="d-flex flex-row align-items-center justify-content-evenly text-center">
+                    <img class="d-block m-2" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CMake_logo.svg"
+                        width="100" alt="CMake" />
+                    <img class="d-block m-2" src="https://avatars.githubusercontent.com/u/6759993" width="100"
+                        alt="Msys 2" />
+                    <img class="d-block m-2"
+                        src="https://upload.wikimedia.org/wikipedia/commons/2/20/Visual_Studio_Icon_2026.svg"
+                        width="100" alt="MSVC" />
+                </div>
+            </div>
         </div>
+        <hr />
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
         integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw=="

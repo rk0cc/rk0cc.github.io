@@ -16,3 +16,6 @@ User-agent: Amazonbot
 User-agent: DeepSeekBot
 User-agent: DeepSeek-Crawler
 Disallow: /
+
+User-agent: *
+Disallow: /assets/thirdparty/
