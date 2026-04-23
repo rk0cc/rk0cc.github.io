@@ -17,5 +17,9 @@ User-agent: DeepSeekBot
 User-agent: DeepSeek-Crawler
 Disallow: /
 
+User-agent: ia_archiver
+User-agent: archive.org_bot
+Allow: /
+
 User-agent: *
 Disallow: /assets/thirdparty/
