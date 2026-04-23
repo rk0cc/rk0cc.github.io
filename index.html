@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
         integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/standard_style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/standard_style.css" />
     <link rel="icon" href="favicon.ico">
     <style>
         @keyframes logo-rotate-expand {
@@ -34,9 +34,21 @@
             justify-content: center;
         }
 
+        body>div.welcome-banner:first-child>div.welcome-banner-content>img.welcome-banner-icon {
+            width: 25vw;
+            min-width: 125px;
+            max-width: 150px;
+        }
+
         body>div.welcome-banner:first-child>div.welcome-banner-content>img.welcome-banner-icon,
         body>div.welcome-banner:first-child>div.welcome-banner-content>h1.welcome-banner-brand {
             animation: logo-rotate-expand 625ms ease-out;
+        }
+
+        @media (min-width: 576px) {
+            body>div.welcome-banner:first-child>div.welcome-banner-content>img.welcome-banner-icon {
+                max-width: 200px;
+            }
         }
 
         @media screen and (min-width: 992px) {
@@ -57,13 +69,19 @@
                 width: 50%;
             }
         }
+
+        @media print {
+            nav.navbar {
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="d-flex flex-column align-items-center justify-content-center welcome-banner">
         <div class="d-flex flex-row align-items-center welcome-banner-content">
-            <img src="assets/logo.svg" width="200" class="d-block welcome-banner-icon" />
+            <img src="assets/logo.svg" class="d-block welcome-banner-icon" />
             <h1 class="welcome-banner-brand display-1 fw-bolder">rk0cc</h1>
         </div>
     </div>
@@ -94,7 +112,7 @@
             </div>
         </div>
     </nav>
-    <div class="my-2 mx-lg-4">
+    <div class="my-2 mx-3 mx-lg-4">
         <h1 class="display-2 w-100 text-center">An engineer involves in two branches</h1>
         <div class="d-flex flex-column flex-lg-row align-items-center justify-content-around text-center my-2">
             <div class="container m-4">
@@ -109,22 +127,26 @@
         <hr />
         <div class="d-flex flex-column flex-lg-row align-items-center justify-content-evenly my-2">
             <div class="m-4 flex-lg-grow-1">
-                <h2 class="display-6">Mature experience on software development</h2>
-                <p>During higher education, rk0cc has experienced common practise of programming in both functional
+                <h2 class="display-6 text-left">Mature experience in software development</h2>
+                <p class="text-left lh-lg">During higher education, rk0cc has experienced common practise of programming in
+                    both functional
                     and object-oriented approaches across various popular programming languages. From Java as the
                     first programming languages, to C&sol;C&plus;&plus; for reaching more barebone control of system
                     memory. Since the principle of programming syntax in Java aligns with C&sol;C&plus;&plus;, which
                     similar with most common programming languages that rk0cc can write a program in at least four
                     popular programing languages, which currently or previously stated in top-10.
                 </p>
-                <p>Since July 2021, rk0cc has started publishing Java and Dart packages in <a
+                <p class="text-left lh-lg">Since July 2021, rk0cc has started publishing Java and Dart packages in <a
                         href="https://mvnrepository.com/artifact/xyz.rk0cc">Maven central</a>
                     and <a href="https://pub.dev/publishers/rk0cc.xyz/packages">Dart pub</a> accordingly as a counter
                     prove of severe worse performance in it first final year project.
-                    Although the update progress becomes slower or even halted because of resuming higher education
-                    progress at September 2022, it puts more efforts on interactions between system and Flutter desktop,
-                    which only had limited options availabled in 2023. As a result, two packages were published with
-                    little impressive reputation.
+                    Although the update progress became slower or even halted because of resuming higher education
+                    progress at September 2022, two additional Dart packages for Flutter desktop utilities were
+                    published in 2023 to enrich desktop environment supports after a year of Flutter desktop announced.
+                </p>
+                <p class="text-left lh-lg">Today, rk0cc stepping in the pinnacle of coding &mdash; GPU parallel computing.
+                    With extensive practise of using building tools, it is possible to concrete API with using native
+                    code across selective languages.
                 </p>
                 <div class="text-center container-fluid my-4">
                     <a href="#" class="btn btn-primary">Visit the featured repositorities</a>
@@ -132,7 +154,7 @@
             </div>
             <div class="m-4 p-2 flex-lg-shrink-0">
                 <h3 class="fs-3 text-left my-4">Programming languages</h3>
-                <div class="d-flex flex-row align-items-center justify-content-evenly text-center">
+                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-evenly text-center">
                     <img class="d-block m-2"
                         src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" width="75"
                         alt="C language" />
@@ -142,7 +164,7 @@
                     <img class="d-block m-2" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Logo_C_sharp.svg"
                         width="75" alt="C sharp language" />
                 </div>
-                <div class="d-flex flex-row align-items-center justify-content-evenly text-center">
+                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-evenly text-center">
                     <img class="d-block m-2" src="https://upload.wikimedia.org/wikipedia/commons/1/18/OpenJDK_logo.svg"
                         width="150" alt="Java (using OpenJDK logo to represents)" />
                     <img class="d-block m-2" src="assets/thirdparty/icon_dart.svg" width="75" alt="Dart" />
@@ -150,26 +172,39 @@
                         src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg"
                         width="75" alt="Python" />
                 </div>
-                <div class="d-flex flex-row align-items-center justify-content-evenly text-center">
+                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-evenly text-center">
                     <img class="d-block m-2" src="https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg" width="150"
                         alt="Go" />
+                    <img class="d-block m-2"
+                        src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
+                        width="100" alt="Javascript" />
+                    <img class="d-block m-2"
+                        src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" width="100"
+                        alt="Typescript" />
                 </div>
                 <h3 class="fs-3 text-left my-4">Frameworks</h3>
-                <div class="d-flex flex-row align-items-center justify-content-evenly text-center">
+                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-evenly text-center">
                     <img class="d-block m-2"
                         src="https://flutter.dev/assets/lockup_flutter_horizontal.549a1b7dd82615e8e9c95c1ade8cee42.svg"
-                        width="250" alt="Flutter" />
+                        width="175" alt="Flutter" />
                     <img class="d-block m-2"
                         src="https://raw.githubusercontent.com/dotnet/brand/refs/heads/main/logo/dotnet-logo.svg"
                         width="125" alt="Dot net" />
                 </div>
+                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-evenly text-center">
+                    <img class="d-block m-2" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenCL_logo.svg"
+                        width="150" alt="OpenCL" />
+                    <img class="d-block m-2"
+                        src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Vulkan_API_logo.svg" width="150"
+                        alt="Vulkan" />
+                </div>
                 <h3 class="fs-3 text-left my-4">Build tools</h3>
-                <div class="d-flex flex-row align-items-center justify-content-evenly text-center">
+                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-evenly text-center">
                     <p class="display-4 m-2">GNU Make</p>
                     <img class="d-block m-2" src="https://www.apache.org/logos/originals/maven.svg" width="225"
                         alt="Apache Maven" />
                 </div>
-                <div class="d-flex flex-row align-items-center justify-content-evenly text-center">
+                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-evenly text-center">
                     <img class="d-block m-2" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CMake_logo.svg"
                         width="100" alt="CMake" />
                     <img class="d-block m-2" src="https://avatars.githubusercontent.com/u/6759993" width="100"
@@ -177,6 +212,11 @@
                     <img class="d-block m-2"
                         src="https://upload.wikimedia.org/wikipedia/commons/2/20/Visual_Studio_Icon_2026.svg"
                         width="100" alt="MSVC" />
+                </div>
+                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-evenly text-center">
+                    <img class="d-block m-2"
+                        src="https://devblogs.microsoft.com/cppblog/wp-content/uploads/sites/9/2021/05/vcpkg-product-mark.png"
+                        width="100" alt="vcpkg" />
                 </div>
             </div>
         </div>
@@ -195,7 +235,6 @@
 
             window.addEventListener("scroll", function (e) {
                 const navbar = document.querySelector("nav.navbar");
-                console.log(window.scrollY);
 
                 if (window.scrollY > welcomeBanner.offsetHeight) {
                     navbar.classList.add(stickedClassName);
