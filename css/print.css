@@ -1,0 +1,9 @@
+nav.navbar button.navbar-toggler,
+nav.navbar div#navbarNav {
+    display: none;
+}
+
+div.forbid-page-breaking {
+    page-break-inside: avoid;
+    break-inside: avoid-page;
+}

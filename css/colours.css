@@ -79,3 +79,13 @@
     --bs-btn-active-bg: var(--m-on-secondary-fixed);
     --bs-btn-active-border-color: var(--m-on-secondary-fixed);
 }
+
+.navbar {
+    --bs-navbar-active-color: var(--m-on-secondary-fixed);
+    background-color: var(--m-secondary-fixed);
+}
+
+.navbar-nav {
+    --bs-nav-link-color: var(--m-secondary-container);
+    --bs-nav-link-hover-color: var(--m-on-secondary-fixed-variant);
+}

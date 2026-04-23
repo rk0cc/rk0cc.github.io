@@ -1,0 +1,12 @@
+html.memorial-gray.semi-gray {
+    --grayscaled-value: 87.5%;
+}
+
+html.memorial-gray.full-gray {
+    --grayscaled-value: 100%;
+}
+
+html.memorial-gray {
+    -webkit-filter: grayscale(var(--grayscaled-value));
+    filter: grayscale(var(--grayscaled-value));
+}

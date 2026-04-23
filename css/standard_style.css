@@ -1,6 +1,4 @@
 @import "colours.css";
 @import "fonts.css";
-
-nav.navbar {
-    background-color: var(--m-surface);
-}
+@import "theme_filter.css" screen;
+@import "print.css" print;
